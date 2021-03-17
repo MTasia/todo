@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VanillaJS &bull; ToDoMVC</title>
+        <link rel="icon" href="./img/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <aside class="aside">
+            <h2>JavaScript</h2>
+            <h3>Vanilla JavaScript Example</h3>
+            <a href="#" class="aside-link">Sourse</a>
+            <div class="aside-line"></div>
+            <div class="aside-text-wrapper">
+                <p class="aside-text-main aside-text">JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, most known as the scripting language for Web pages, but used in many non-browser environments as well such as node.js or Apache CouchDB.</p>
+            </div>
+            <a href="#" class="aside-link">
+                <div class="align-right">JavaScript</div>
+            </a>
+            <div class="aside-line"></div>
+            <p class="aside-text">If you have other helpful links to share, or find any of the links above no longer work, please <a href="#" class="aside-link">let us know</a>.</p>
+        </aside>
+
+        <div class="main">
+            <header>
+                <h1>todos</h1>
+            </header>
+            
+            <form>
+                <label class="todo-input-label">❯</label>
+                <input type="text" placeholder="What needs to be done?" class="input">
+                <ul class="todo-list">
+                    <!-- <li>
+                        <div class="todo-wrapper">
+                            <div class="complited-button"></div>
+                            <label class="todo-text">2</label>
+                            <div class="trashed-button">×</div>
+                        </div>
+                    </li> -->
+                </ul>
+            </form>
+
+            <div class="todo-menu hidden">
+                <div class="todo-count"></div>
+                <ul class="todo-menu-list">
+                    <li><a href="#/all" class="all selected">All</a></li>
+                    <li><a href="#/active" class="active">Active</a></li>
+                    <li><a href="#/complited" class="complited">Complited</a></li>
+                </ul>
+                <div class="clear-complited hidden">Clear complited</div>
+            </div>
+
+            <footer class="info">
+                <p>Double-click to edit a todo</p>
+                <p>Created by <a href="http://twitter.com/oscargodson">Oscar Godson</a></p>
+                <p>Refactored by <a href="https://github.com/cburgmer">Christoph Burgmer</a></p>
+                <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+            </footer>
+        </div>
+
+        <script src="./app.js"></script>
+    
+    </body>
+</html>
